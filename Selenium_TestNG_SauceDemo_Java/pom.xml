@@ -42,19 +42,13 @@
             <version>${webdrivermanager.version}</version>
         </dependency>
 
-        <!-- ExtentReports -->
+        <!-- ExtentReports Core -->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>${extentreports.version}</version>
+            <version>5.1.1</version>
         </dependency>
 
-        <!-- Extent Spark Reporter -->
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports-spark</artifactId>
-            <version>${extentreports.version}</version>
-        </dependency>
 
         <!-- Apache Commons -->
         <dependency>
