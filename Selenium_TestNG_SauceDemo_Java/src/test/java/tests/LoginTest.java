@@ -21,6 +21,11 @@ public class LoginTest extends BaseTest {
 
     @Test(dataProvider = "users")
     public void loginWithMultipleUsers(String username, String password, boolean shouldLogin) throws InterruptedException {
+
+        // Nombre dinámico para el reporte
+        String testName = "Login test for user: " + username;
+        System.out.println(testName);
+
         LoginPage loginPage = new LoginPage(driver);
 
         loginPage.enterUsername(username);

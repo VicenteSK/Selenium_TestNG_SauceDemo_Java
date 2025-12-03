@@ -17,7 +17,7 @@ public class LoginPage extends BasePage {
     // Métodos "visibles" con espera interna (NO lanzan checked exception)
     public void enterUsername(String username) {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException ignored) {}
         driver.findElement(usernameInput).clear();
         driver.findElement(usernameInput).sendKeys(username);
@@ -25,7 +25,7 @@ public class LoginPage extends BasePage {
 
     public void enterPassword(String password) {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException ignored) {}
         driver.findElement(passwordInput).clear();
         driver.findElement(passwordInput).sendKeys(password);
@@ -33,7 +33,7 @@ public class LoginPage extends BasePage {
 
     public void clickLogin() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException ignored) {}
         driver.findElement(loginButton).click();
     }

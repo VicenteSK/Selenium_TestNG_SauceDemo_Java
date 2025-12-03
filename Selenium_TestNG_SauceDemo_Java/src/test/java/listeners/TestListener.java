@@ -22,10 +22,15 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest extentTest = extent.createTest(
-                result.getMethod().getMethodName(),
-                result.getMethod().getDescription()
-        );
+
+        Object[] params = result.getParameters();
+        String dynamicName = result.getMethod().getMethodName();
+
+        if (params != null && params.length > 0) {
+            dynamicName += " - " + params[0].toString(); // username
+        }
+
+        ExtentTest extentTest = extent.createTest(dynamicName);
         test.set(extentTest);
     }
 
