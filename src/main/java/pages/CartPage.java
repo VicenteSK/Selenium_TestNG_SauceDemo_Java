@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 public class CartPage extends BasePage {
 
+    // Locators
     private By cartItems = By.className("cart_item");
-    private By title = By.className("title");
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -15,8 +15,8 @@ public class CartPage extends BasePage {
     public int getCartItemsCount() {
         return driver.findElements(cartItems).size();
     }
-
-    public String getTitle() {
-        return driver.findElement(title).getText();
+    public boolean isProductInCart(String productName) {
+        return driver.findElements(By.xpath("//div[@class='inventory_item_name' and text()='" + productName + "']")).size() > 0;
     }
+
 }
