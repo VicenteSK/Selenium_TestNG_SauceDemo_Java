@@ -1,5 +1,5 @@
 #############################
-#        BUILD / JAVA       #
+#        JAVA / MAVEN       #
 #############################
 
 target/
@@ -9,21 +9,36 @@ target/
 *.ear
 *.log
 
-# No permitir targets de subcarpetas
+# Evitar targets dentro de módulos
 !**/src/main/**/target/
 !**/src/test/**/target/
 
 #############################
-#        REPORTES           #
+#         REPORTES          #
 #############################
 
 # Extent Reports
 extent-reports/
 reports/
-*.html
 
 # TestNG & Surefire
 surefire-reports/
+
+# Allure (por si lo usas después)
+allure-results/
+allure-report/
+
+# Cucumber Reports (si agregas BDD)
+cucumber-report/
+cucumber-html-reports/
+
+#############################
+#        SELENIUM           #
+#############################
+
+# Screenshots (si guardas errores)
+screenshots/
+*.png
 
 #############################
 #         IDEs              #
@@ -34,6 +49,7 @@ surefire-reports/
 *.iml
 *.ipr
 *.iws
+out/
 
 # Eclipse
 .apt_generated
@@ -53,14 +69,13 @@ nbdist/
 build/
 
 #############################
-#        EDITORES           #
+#         VS CODE           #
 #############################
 
-# VS Code
 .vscode/
 
 #############################
-#      SISTEMA OPERATIVO    #
+#    SISTEMA OPERATIVO      #
 #############################
 
 # Mac
@@ -68,3 +83,15 @@ build/
 
 # Windows
 Thumbs.db
+ehthumbs.db
+desktop.ini
+
+#############################
+#     ARCHIVOS TEMPORALES   #
+#############################
+
+*.tmp
+*.temp
+*.cache
+*.swp
+*.bak
