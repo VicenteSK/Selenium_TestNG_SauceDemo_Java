@@ -42,4 +42,10 @@ public class BasePage {
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
+
+    protected void waitFor(int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException ignored) {}
+    }
 }
