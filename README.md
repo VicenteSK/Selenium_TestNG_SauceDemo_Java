@@ -105,7 +105,7 @@ Ejecutar un test específico
 mvn -Dtest=CheckoutTest test
 
 Ejecutar suite TestNG
-mvn test -DsuiteXmlFile=testng.xml
+mvn test "-DsuiteXmlFile=testng.xml"
 
 📊 Reportes
 
