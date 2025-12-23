@@ -1,11 +1,14 @@
-Selenium TestNG – SauceDemo Automation Framework
-📌 Descripción
+# Selenium TestNG – SauceDemo Automation Framework
+
+## 📌 Descripción
 
 Framework de automatización de pruebas E2E para el sitio SauceDemo, desarrollado con Java, Selenium WebDriver, TestNG y Maven, aplicando Page Object Model (POM), listeners, reportes y buenas prácticas de QA Automation.
 
 El proyecto automatiza los flujos principales del e-commerce, incluyendo Login, Productos y Checkout completo, con validaciones funcionales y reportes automáticos.
 
-🚀 Tecnologías utilizadas
+---
+
+## 🚀 Tecnologías utilizadas
 
 Java 21
 
@@ -22,6 +25,8 @@ Extent Reports
 Page Object Model (POM)
 
 Git & GitHub
+
+---
 
 📂 Estructura del proyecto
 Selenium_TestNG_SauceDemo_Java
@@ -56,7 +61,8 @@ Selenium_TestNG_SauceDemo_Java
 │
 └── target   (ignorado por git)
 
-🧠 Patrón de diseño
+---
+## 🧠 Patrón de diseño
 
 El framework utiliza Page Object Model (POM) para:
 
@@ -66,7 +72,10 @@ Facilitar mantenimiento
 
 Mejorar legibilidad y escalabilidad
 
-✅ Flujos automatizados
+---
+
+## ✅ Flujos automatizados
+
 🔐 Login
 
 Autenticación con credenciales válidas
@@ -97,7 +106,9 @@ Validar total
 
 Validar mensaje de confirmación
 
-▶️ Ejecución de pruebas
+---
+## ▶️ Ejecución de pruebas
+
 Ejecutar todos los tests
 mvn test
 
@@ -107,15 +118,17 @@ mvn -Dtest=CheckoutTest test
 Ejecutar suite TestNG
 mvn test "-DsuiteXmlFile=testng.xml"
 
-📊 Reportes
+---
 
-TestNG Surefire Reports (HTML)
+## 📊 Reportes
 
 Extent Reports (HTML)
 
-📁 Generados automáticamente al finalizar la ejecución.
+![Reporte TestNG](docs/Test_Selenium_TestNG_SauceDemo_Java.png)
 
-🛠️ Buenas prácticas aplicadas
+---
+
+## 🛠️ Buenas prácticas aplicadas
 
 Page Object Model
 
@@ -129,8 +142,12 @@ Ejecución en modo incógnito
 
 Código limpio y mantenible
 
-👨‍💻 Autor
+---
+
+## 👨‍💻 Autor
 
 Vicente Valenzuela
+
 QA Manual | QA Tester Automation Engineer
+
 Selenium • TestNG • Cypress • Postman • Scrum
