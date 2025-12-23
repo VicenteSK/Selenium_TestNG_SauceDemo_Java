@@ -28,38 +28,39 @@ Git & GitHub
 
 ---
 
-📂 Estructura del proyecto
-Selenium_TestNG_SauceDemo_Java
-│
-├── pom.xml
-├── testng.xml
-├── .gitignore
-│
-├── src
-│   ├── main
-│   │   └── java
-│   │       ├── pages
-│   │       │   ├── BasePage.java
-│   │       │   ├── LoginPage.java
-│   │       │   ├── ProductsPage.java
-│   │       │   ├── CartPage.java
-│   │       │   └── CheckoutPage.java
-│   │       │
-│   │       └── utils
-│   │           └── DriverManager.java
-│   │
-│   └── test
-│       └── java
-│           ├── listeners
-│           │   └── TestListener.java
-│           │
-│           └── tests
-│               ├── BaseTest.java
-│               ├── LoginTest.java
-│               ├── ProductTest.java
-│               └── CheckoutTest.java
-│
-└── target   (ignorado por git)
+## 📂 Estructura del proyecto 
+
+**`Selenium_TestNG_SauceDemo_Java`**
+*  **`│`**
+*  **`├── pom.xml`**
+*  **`├── testng.xml`**
+*  **`├── .gitignore`**
+*  **`│`**
+*  **`├── src`**
+*  **`│   ├── main`**
+*  **`│   │   └── java`**
+*  **`│   │       ├── pages`**
+*  **`│   │       │   ├── BasePage.java`**
+*  **`│   │       │   ├── LoginPage.java`**
+*  **`│   │       │   ├── ProductsPage.java`**
+*  **`│   │       │   ├── CartPage.java`**
+*  **`│   │       │   └── CheckoutPage.java`**
+*  **`│   │       │`**
+*  **`│   │       └── utils`**
+*  **`│   │           └── DriverManager.java`**
+*  **`│   │`**
+*  **`│   └── test`**
+*  **`│       └── java`**
+*  **`│           ├── listeners`**
+*  **`│           │   └── TestListener.java`**
+*  **`│           │`**
+*  **`│           └── tests`**
+*  **`│               ├── BaseTest.java`**
+*  **`│               ├── LoginTest.java`**
+*  **`│               ├── ProductTest.java`**
+*  **`│               └── CheckoutTest.java`**
+*  **`│`**
+*  **`└── target   (ignorado por git)`**
 
 ---
 ## 🧠 Patrón de diseño
@@ -109,22 +110,24 @@ Validar mensaje de confirmación
 ---
 ## ▶️ Ejecución de pruebas
 
-Ejecutar todos los tests
+### Ejecutar todos los tests
+```
 mvn test
-
-Ejecutar un test específico
+```
+### Ejecutar un test específico
+```
 mvn -Dtest=CheckoutTest test
-
-Ejecutar suite TestNG
+```
+### Ejecutar suite TestNG
+```
 mvn test "-DsuiteXmlFile=testng.xml"
-
+```
 ---
 
 ## 📊 Reportes
 
-Extent Reports (HTML)
 
-![Reporte TestNG](docs/Test_Selenium_TestNG_SauceDemo_Java.png)
+![Test Report](docs/Test_Selenium_TestNG_SauceDemo_Java.png)
 
 ---
 
