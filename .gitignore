@@ -36,9 +36,13 @@ cucumber-html-reports/
 #        SELENIUM           #
 #############################
 
-# Screenshots (si guardas errores)
+# Screenshots automáticos
 screenshots/
-*.png
+screenshots/*.png
+
+# Permitir imágenes de documentación
+docs/
+!docs/**/*.png
 
 #############################
 #         IDEs              #
